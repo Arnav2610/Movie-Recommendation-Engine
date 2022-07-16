@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+
+Recommendations!
+
+{% endblock %}
+
+{% block body %}
+
+<h2>Here are our suggestions for you!</h2>
+<br>
+
+{% for title in titles %}
+
+<h5>{{ title }}</h5><br>
+
+{% endfor %}
+
+
+
+
+
+
+
+{% endblock %}

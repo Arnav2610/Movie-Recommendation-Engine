@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+
+Movie Recommender
+
+{% endblock %}
+
+{% block body %}
+
+<h2>Movie Recommendation Engine</h2>
+
+<h5>It's always a pain finding new movies to watch. Theres always that fear that it will be boring and a waste of your time. If that sounds relatable, this website is for you! Input 5 movies and your rating of them out of 10, and our ML algorithm will list out 15 movie recommendations for you based on those ratings!</h5>
+
+<p>Make sure each input movie is unique and for movies containing the word 'The', input them as such: 'Meg, The'</p>
+
+<form method="post" action="/">
+<div class="movie">
+  <label for="name1">Movie 1:</label><br>
+  <input type="text" id="name1" name="name1">
+  <input type="range" name="rating1" min="1" max="10" value="5">
+</div>
+<div class="movie">
+  <label for="name2">Movie 2:</label><br>
+  <input type="text" id="name2" name="name2">
+  <input type="range" name="rating2" min="1" max="10" value="5">
+</div>
+  <div class="movie">
+  <label for="name3">Movie 3:</label><br>
+  <input type="text" id="name3" name="name3">
+  <input type="range" name="rating3" min="1" max="10" value="5">
+</div>
+  <div class="movie">
+  <label for="name4">Movie 4:</label><br>
+  <input type="text" id="name4" name="name4">
+  <input type="range" name="rating4" min="1" max="10" value="5">
+</div>
+  <div class="movie">
+  <label for="name5">Movie 5:</label><br>
+  <input type="text" id="name5" name="name5">
+  <input type="range" name="rating5" min="1" max="10" value="5">
+  </div><br>
+  <input type="submit" value="Submit">
+</form>
+
+{% endblock %}
